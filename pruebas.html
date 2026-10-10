@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pruebas</title>
+</head>
+<body>
+    <label for="fecha">Fecha: </label><input type="date" id="fecha">
+    <button onclick="convertir()">Convertir</button>
+    <script src="functions.js"></script>
+    <script>
+        function convertir(){
+            fecha = document.getElementById('fecha').value;
+            alert(formatDate(fecha, 'full'));
+        }
+    </script>
+</body>
+</html>
